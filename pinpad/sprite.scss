@@ -1,9 +1,7 @@
 $svg-sprite-path: "https://m0.ttxm.co.uk/images/vector-sprite/" !default;
-$svg-sprite-folder: "pinpad";
-$svg-sprite-url: $svg-sprite-path + $svg-sprite-folder + "/sprite-c254883b.svg";
 
 %svg-common {
-    background: url($svg-sprite-url) no-repeat;
+    background: url($svg-sprite-path + "pinpad/sprite-c254883b.svg") no-repeat;
 }
 
 .tt_vector-pinpad-0 {
