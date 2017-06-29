@@ -1,21 +1,154 @@
 $svg-sprite-path: "https://m0.ttxm.co.uk/images/vector-sprite/" !default;
 $svg-sprite-folder: "pinpad";
-$svg-sprite-url: $svg-sprite-path + $svg-sprite-folder + "/sprite-29c10e49.svg";
+$svg-sprite-url: $svg-sprite-path + $svg-sprite-folder + "/sprite-c254883b.svg";
 
 %svg-common {
     background: url($svg-sprite-url) no-repeat;
 }
 
+.tt_vector-pinpad-0 {
+@extend %svg-common;
+background-position: 25% 0;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-0-fill {
+@extend %svg-common;
+background-position: 75% 25%;
+width: 78px;
+height: 78px;
+}
+
 .tt_vector-pinpad-1 {
 @extend %svg-common;
-background-position: 0 0;
+background-position: 0 25%;
 width: 78px;
 height: 78px;
 }
 
 .tt_vector-pinpad-1-fill {
 @extend %svg-common;
+background-position: 25% 25%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-2 {
+@extend %svg-common;
+background-position: 50% 0;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-2-fill {
+@extend %svg-common;
+background-position: 50% 25%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-3 {
+@extend %svg-common;
+background-position: 0 50%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-3-fill {
+@extend %svg-common;
+background-position: 25% 50%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-4 {
+@extend %svg-common;
+background-position: 50% 50%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-4-fill {
+@extend %svg-common;
+background-position: 75% 0;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-5 {
+@extend %svg-common;
+background-position: 0 0;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-5-fill {
+@extend %svg-common;
+background-position: 75% 50%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-6 {
+@extend %svg-common;
+background-position: 0 75%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-6-fill {
+@extend %svg-common;
+background-position: 25% 75%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-7 {
+@extend %svg-common;
+background-position: 50% 75%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-7-fill {
+@extend %svg-common;
+background-position: 75% 75%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-8 {
+@extend %svg-common;
 background-position: 100% 0;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-8-fill {
+@extend %svg-common;
+background-position: 100% 25%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-9 {
+@extend %svg-common;
+background-position: 100% 50%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-9-fill {
+@extend %svg-common;
+background-position: 100% 75%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-backspace {
+@extend %svg-common;
+background-position: 0 100%;
 width: 78px;
 height: 78px;
 }
