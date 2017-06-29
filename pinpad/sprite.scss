@@ -1,7 +1,7 @@
 $svg-sprite-path: "https://m0.ttxm.co.uk/images/vector-sprite/" !default;
 
 %svg-common {
-    background: url($svg-sprite-path + "pinpad/sprite-c254883b.svg") no-repeat;
+    background: url($svg-sprite-path + "pinpad/sprite-8e291ac9.svg") no-repeat;
 }
 
 .tt_vector-pinpad-0 {
@@ -13,7 +13,7 @@ height: 78px;
 
 .tt_vector-pinpad-0-fill {
 @extend %svg-common;
-background-position: 75% 25%;
+background-position: 75% 50%;
 width: 78px;
 height: 78px;
 }
@@ -76,14 +76,14 @@ height: 78px;
 
 .tt_vector-pinpad-5 {
 @extend %svg-common;
-background-position: 0 0;
+background-position: 75% 25%;
 width: 78px;
 height: 78px;
 }
 
 .tt_vector-pinpad-5-fill {
 @extend %svg-common;
-background-position: 75% 50%;
+background-position: 0 0;
 width: 78px;
 height: 78px;
 }
@@ -147,6 +147,13 @@ height: 78px;
 .tt_vector-pinpad-backspace {
 @extend %svg-common;
 background-position: 0 100%;
+width: 78px;
+height: 78px;
+}
+
+.tt_vector-pinpad-backspace-fill {
+@extend %svg-common;
+background-position: 25% 100%;
 width: 78px;
 height: 78px;
 }
