@@ -1,6 +1,27 @@
 $svg-sprite-path: "https://m0.ttxm.co.uk/images/vector-sprite/" !default;
 
 %svg-common {
-    background: url($svg-sprite-path + "welcome-centre/sprite-8eb16979.svg") no-repeat;
+    background: url($svg-sprite-path + "welcome-centre/sprite-c73aed8e.svg") no-repeat;
+}
+
+.tt_vector-welcome-centre-faster {
+@extend %svg-common;
+background-position: 0 0;
+width: 137px;
+height: 90px;
+}
+
+.tt_vector-welcome-centre-fibre {
+@extend %svg-common;
+background-position: 100% 0;
+width: 137px;
+height: 90px;
+}
+
+.tt_vector-welcome-centre-ufo {
+@extend %svg-common;
+background-position: 0 100%;
+width: 137px;
+height: 90px;
 }
 
