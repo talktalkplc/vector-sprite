@@ -1,0 +1,6 @@
+$svg-sprite-path: "https://m0.ttxm.co.uk/images/vector-sprite/" !default;
+
+%svg-common {
+    background: url($svg-sprite-path + "welcome-centre/sprite-8eb16979.svg") no-repeat;
+}
+
