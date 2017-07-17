@@ -1,14 +1,21 @@
 $svg-sprite-path: "https://m0.ttxm.co.uk/images/vector-sprite/" !default;
 
 %svg-common {
-    background: url($svg-sprite-path + "welcome-centre/sprite-da5e920c.svg") no-repeat;
+    background: url($svg-sprite-path + "welcome-centre/sprite-c9f643be.svg") no-repeat;
 }
 
 .tt_vector-welcome-centre-bills {
 @extend %svg-common;
-background-position: 100% 0;
+background-position: 0 100%;
 width: 122px;
 height: 115px;
+}
+
+.tt_vector-welcome-centre-fast_small {
+@extend %svg-common;
+background-position: 74.86338797814207% 43.39622641509434%;
+width: 30px;
+height: 30px;
 }
 
 .tt_vector-welcome-centre-faster {
@@ -18,18 +25,46 @@ width: 137px;
 height: 90px;
 }
 
+.tt_vector-welcome-centre-faster_small {
+@extend %svg-common;
+background-position: 83.06010928961749% 54.716981132075475%;
+width: 30px;
+height: 30px;
+}
+
 .tt_vector-welcome-centre-fibre {
 @extend %svg-common;
-background-position: 52.8957528957529% 0;
+background-position: 0 43.90243902439025%;
 width: 137px;
 height: 90px;
 }
 
+.tt_vector-welcome-centre-help_small {
+@extend %svg-common;
+background-position: 99.4535519125683% 43.39622641509434%;
+width: 30px;
+height: 30px;
+}
+
 .tt_vector-welcome-centre-mobile {
 @extend %svg-common;
-background-position: 0 100%;
+background-position: 100% 0;
 width: 122px;
 height: 115px;
+}
+
+.tt_vector-welcome-centre-mobile_small {
+@extend %svg-common;
+background-position: 83.06010928961749% 43.39622641509434%;
+width: 30px;
+height: 30px;
+}
+
+.tt_vector-welcome-centre-payment_small {
+@extend %svg-common;
+background-position: 91.2568306010929% 43.39622641509434%;
+width: 30px;
+height: 30px;
 }
 
 .tt_vector-welcome-centre-payments {
@@ -39,10 +74,24 @@ width: 122px;
 height: 115px;
 }
 
+.tt_vector-welcome-centre-search_small {
+@extend %svg-common;
+background-position: 74.86338797814207% 54.716981132075475%;
+width: 30px;
+height: 30px;
+}
+
 .tt_vector-welcome-centre-ufo {
 @extend %svg-common;
-background-position: 0 43.90243902439025%;
+background-position: 52.8957528957529% 0;
 width: 137px;
 height: 90px;
+}
+
+.tt_vector-welcome-centre-ufo_small {
+@extend %svg-common;
+background-position: 91.2568306010929% 54.716981132075475%;
+width: 30px;
+height: 30px;
 }
 
