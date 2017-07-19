@@ -1,25 +1,21 @@
 $svg-sprite-path: "https://m0.ttxm.co.uk/images/vector-sprite/" !default;
 
-%svg-common {
-    background: url($svg-sprite-path + "sales/sprite-f17039bb.svg") no-repeat;
-}
-
 .tt_vector-sales-fast-illustration-blue {
-@extend %svg-common;
+background: url($svg-sprite-path + "sales/sprite-f17039bb.svg") no-repeat;
 background-position: 0 0;
 width: 512px;
 height: 512px;
 }
 
 .tt_vector-sales-faster-illustration-green {
-@extend %svg-common;
+background: url($svg-sprite-path + "sales/sprite-f17039bb.svg") no-repeat;
 background-position: 100% 0;
 width: 512px;
 height: 512px;
 }
 
 .tt_vector-sales-persistent-basket-notification {
-@extend %svg-common;
+background: url($svg-sprite-path + "sales/sprite-f17039bb.svg") no-repeat;
 background-position: 0 100%;
 width: 512px;
 height: 512px;
