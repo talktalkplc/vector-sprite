@@ -1,89 +1,101 @@
 .tt_vector-welcome-centre-app-billing {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 0 0 no-repeat;
-	width: 280px;
-	height: 280px;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 0 0 no-repeat;
+	width: 140px;
+	height: 140px;
+}
+
+.tt_vector-welcome-centre-app-chat {
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 42.813455657492355% 54.90196078431372% no-repeat;
+	width: 140px;
+	height: 140px;
+}
+
+.tt_vector-welcome-centre-app-payment {
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 42.813455657492355% 0 no-repeat;
+	width: 140px;
+	height: 140px;
 }
 
 .tt_vector-welcome-centre-app-usage {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 100% 0 no-repeat;
-	width: 280px;
-	height: 280px;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 0 54.90196078431372% no-repeat;
+	width: 140px;
+	height: 140px;
 }
 
 .tt_vector-welcome-centre-bills {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 0 100% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 70.72463768115942% 100% no-repeat;
 	width: 122px;
 	height: 115px;
 }
 
 .tt_vector-welcome-centre-fast_small {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 71.76470588235294% 85.05747126436782% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 87.76978417266187% 95.65217391304348% no-repeat;
 	width: 50px;
 	height: 50px;
 }
 
 .tt_vector-welcome-centre-faster {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 0 70.88607594936708% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 84.84848484848484% 59.01639344262295% no-repeat;
 	width: 137px;
 	height: 90px;
 }
 
 .tt_vector-welcome-centre-faster_small {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 80.58823529411765% 64.36781609195403% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 87.76978417266187% 81.15942028985508% no-repeat;
 	width: 50px;
 	height: 50px;
 }
 
 .tt_vector-welcome-centre-fibre {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 32.38770685579196% 70.88607594936708% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 84.84848484848484% 29.508196721311474% no-repeat;
 	width: 137px;
 	height: 90px;
 }
 
 .tt_vector-welcome-centre-help_small {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 83.20754716981132% 72.52747252747253% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 95.4233409610984% 27.397260273972602% no-repeat;
 	width: 30px;
 	height: 30px;
 }
 
 .tt_vector-welcome-centre-mobile {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 27.85388127853881% 100% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 0 100% no-repeat;
 	width: 122px;
 	height: 115px;
 }
 
 .tt_vector-welcome-centre-mobile_small {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 90.3921568627451% 64.36781609195403% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 100% 0 no-repeat;
 	width: 50px;
 	height: 50px;
 }
 
 .tt_vector-welcome-centre-payment_small {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 77.54716981132076% 72.52747252747253% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 95.4233409610984% 35.61643835616438% no-repeat;
 	width: 30px;
 	height: 30px;
 }
 
 .tt_vector-welcome-centre-payments {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 55.70776255707762% 100% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 35.36231884057971% 100% no-repeat;
 	width: 122px;
 	height: 115px;
 }
 
 .tt_vector-welcome-centre-search_small {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 96.41509433962264% 61.53846153846154% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 95.4233409610984% 43.83561643835616% no-repeat;
 	width: 30px;
 	height: 30px;
 }
 
 .tt_vector-welcome-centre-ufo {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 64.77541371158392% 70.88607594936708% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 84.84848484848484% 0 no-repeat;
 	width: 137px;
 	height: 90px;
 }
 
 .tt_vector-welcome-centre-ufo_small {
-	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-31173a3a.svg") 81.56862745098039% 85.05747126436782% no-repeat;
+	background: url("https://m0.ttxm.co.uk/images/vector-sprite/welcome-centre/sprite-b4152ad3.svg") 100% 14.492753623188406% no-repeat;
 	width: 50px;
 	height: 50px;
 }

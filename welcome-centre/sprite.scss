@@ -1,106 +1,120 @@
 $svg-sprite-path: "https://m0.ttxm.co.uk/images/vector-sprite/" !default;
 
 .tt_vector-welcome-centre-app-billing {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
 background-position: 0 0;
-width: 280px;
-height: 280px;
+width: 140px;
+height: 140px;
+}
+
+.tt_vector-welcome-centre-app-chat {
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 42.813455657492355% 54.90196078431372%;
+width: 140px;
+height: 140px;
+}
+
+.tt_vector-welcome-centre-app-payment {
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 42.813455657492355% 0;
+width: 140px;
+height: 140px;
 }
 
 .tt_vector-welcome-centre-app-usage {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 100% 0;
-width: 280px;
-height: 280px;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 0 54.90196078431372%;
+width: 140px;
+height: 140px;
 }
 
 .tt_vector-welcome-centre-bills {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 0 100%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 70.72463768115942% 100%;
 width: 122px;
 height: 115px;
 }
 
 .tt_vector-welcome-centre-fast_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 71.76470588235294% 85.05747126436782%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 87.76978417266187% 95.65217391304348%;
 width: 50px;
 height: 50px;
 }
 
 .tt_vector-welcome-centre-faster {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 0 70.88607594936708%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 84.84848484848484% 59.01639344262295%;
 width: 137px;
 height: 90px;
 }
 
 .tt_vector-welcome-centre-faster_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 80.58823529411765% 64.36781609195403%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 87.76978417266187% 81.15942028985508%;
 width: 50px;
 height: 50px;
 }
 
 .tt_vector-welcome-centre-fibre {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 32.38770685579196% 70.88607594936708%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 84.84848484848484% 29.508196721311474%;
 width: 137px;
 height: 90px;
 }
 
 .tt_vector-welcome-centre-help_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 83.20754716981132% 72.52747252747253%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 95.4233409610984% 27.397260273972602%;
 width: 30px;
 height: 30px;
 }
 
 .tt_vector-welcome-centre-mobile {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 27.85388127853881% 100%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 0 100%;
 width: 122px;
 height: 115px;
 }
 
 .tt_vector-welcome-centre-mobile_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 90.3921568627451% 64.36781609195403%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 100% 0;
 width: 50px;
 height: 50px;
 }
 
 .tt_vector-welcome-centre-payment_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 77.54716981132076% 72.52747252747253%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 95.4233409610984% 35.61643835616438%;
 width: 30px;
 height: 30px;
 }
 
 .tt_vector-welcome-centre-payments {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 55.70776255707762% 100%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 35.36231884057971% 100%;
 width: 122px;
 height: 115px;
 }
 
 .tt_vector-welcome-centre-search_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 96.41509433962264% 61.53846153846154%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 95.4233409610984% 43.83561643835616%;
 width: 30px;
 height: 30px;
 }
 
 .tt_vector-welcome-centre-ufo {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 64.77541371158392% 70.88607594936708%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 84.84848484848484% 0;
 width: 137px;
 height: 90px;
 }
 
 .tt_vector-welcome-centre-ufo_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
-background-position: 81.56862745098039% 85.05747126436782%;
+background: url($svg-sprite-path + "welcome-centre/sprite-b4152ad3.svg") no-repeat;
+background-position: 100% 14.492753623188406%;
 width: 50px;
 height: 50px;
 }
