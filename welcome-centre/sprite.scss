@@ -1,92 +1,106 @@
 $svg-sprite-path: "https://m0.ttxm.co.uk/images/vector-sprite/" !default;
 
+.tt_vector-welcome-centre-app-billing {
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 0 0;
+width: 280px;
+height: 280px;
+}
+
+.tt_vector-welcome-centre-app-usage {
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 100% 0;
+width: 280px;
+height: 280px;
+}
+
 .tt_vector-welcome-centre-bills {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
 background-position: 0 100%;
 width: 122px;
 height: 115px;
 }
 
 .tt_vector-welcome-centre-fast_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 79.1907514450867% 46.93877551020408%;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 71.76470588235294% 85.05747126436782%;
 width: 50px;
 height: 50px;
 }
 
 .tt_vector-welcome-centre-faster {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 0 0;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 0 70.88607594936708%;
 width: 137px;
 height: 90px;
 }
 
 .tt_vector-welcome-centre-faster_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 39.59537572254335% 36.734693877551024%;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 80.58823529411765% 64.36781609195403%;
 width: 50px;
 height: 50px;
 }
 
 .tt_vector-welcome-centre-fibre {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 0 43.90243902439025%;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 32.38770685579196% 70.88607594936708%;
 width: 137px;
 height: 90px;
 }
 
 .tt_vector-welcome-centre-help_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 37.431693989071036% 52.83018867924528%;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 83.20754716981132% 72.52747252747253%;
 width: 30px;
 height: 30px;
 }
 
 .tt_vector-welcome-centre-mobile {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 100% 0;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 27.85388127853881% 100%;
 width: 122px;
 height: 115px;
 }
 
 .tt_vector-welcome-centre-mobile_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 93.64161849710983% 46.93877551020408%;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 90.3921568627451% 64.36781609195403%;
 width: 50px;
 height: 50px;
 }
 
 .tt_vector-welcome-centre-payment_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 64.75409836065573% 33.9622641509434%;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 77.54716981132076% 72.52747252747253%;
 width: 30px;
 height: 30px;
 }
 
 .tt_vector-welcome-centre-payments {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 44.52554744525548% 100%;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 55.70776255707762% 100%;
 width: 122px;
 height: 115px;
 }
 
 .tt_vector-welcome-centre-search_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 45.62841530054645% 52.83018867924528%;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 96.41509433962264% 61.53846153846154%;
 width: 30px;
 height: 30px;
 }
 
 .tt_vector-welcome-centre-ufo {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 52.8957528957529% 0;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 64.77541371158392% 70.88607594936708%;
 width: 137px;
 height: 90px;
 }
 
 .tt_vector-welcome-centre-ufo_small {
-background: url($svg-sprite-path + "welcome-centre/sprite-882ed6c3.svg") no-repeat;
-background-position: 54.04624277456647% 36.734693877551024%;
+background: url($svg-sprite-path + "welcome-centre/sprite-31173a3a.svg") no-repeat;
+background-position: 81.56862745098039% 85.05747126436782%;
 width: 50px;
 height: 50px;
 }
