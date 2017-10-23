@@ -1,0 +1,30 @@
+$svg-sprite-path: "https://m0.ttxm.co.uk/images/vector-sprite/" !default;
+
+.tt_vector-notifications-error {
+background: url($svg-sprite-path + "notifications/sprite-8270e750.svg") no-repeat;
+background-position: 0 100%;
+width: 48px;
+height: 48px;
+}
+
+.tt_vector-notifications-info {
+background: url($svg-sprite-path + "notifications/sprite-8270e750.svg") no-repeat;
+background-position: 52.475247524752476% 0;
+width: 48px;
+height: 48px;
+}
+
+.tt_vector-notifications-success {
+background: url($svg-sprite-path + "notifications/sprite-8270e750.svg") no-repeat;
+background-position: 100% 0;
+width: 48px;
+height: 48px;
+}
+
+.tt_vector-notifications-warning {
+background: url($svg-sprite-path + "notifications/sprite-8270e750.svg") no-repeat;
+background-position: 0 0;
+width: 53px;
+height: 47px;
+}
+
