@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG CSS sprite preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+
+            i {
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+                display: inline-block;
+                background-size: 64px 60px !important;
+            }
+        </style>
+
+<!--
+Sprite CSS
+====================================================================================================
+This is an all-in-one inline version of the CSS necessary to use the SVG sprite.
+-->
+
+<style>
+.tt_vector-notifications-error {
+    background: url("sprite-8785485b.svg") 99.41176470588233% 0 no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.tt_vector-notifications-info {
+    background: url("sprite-8785485b.svg") 0 100% no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.tt_vector-notifications-success {
+    background: url("sprite-8785485b.svg") 88.23529411764706% 100% no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.tt_vector-notifications-warning {
+    background: url("sprite-8785485b.svg") 0 0 no-repeat;
+    width: 33.8px;
+    height: 30px;
+}
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </head>
+    <body>
+        <header>
+            <h1>SVG CSS sprite preview</h1>
+            <p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+        </header>
+        <section>
+
+<!--
+Conventional CSS sprite
+====================================================================================================
+This technique uses CSS classes to display portions of the sprite as background image of
+appropriately sized elements.
+-->
+
+            <ul>
+             <li title="error">
+                    <div class="icon-box">
+                        <i class="tt_vector-notifications-error">error</i>
+                    </div>
+                    <h2>error, </h2>
+                </li>
+             <li title="info">
+                    <div class="icon-box">
+                        <i class="tt_vector-notifications-info">info</i>
+                    </div>
+                    <h2>info, </h2>
+                </li>
+             <li title="success">
+                    <div class="icon-box">
+                        <i class="tt_vector-notifications-success">success</i>
+                    </div>
+                    <h2>success, </h2>
+                </li>
+             <li title="warning">
+                    <div class="icon-box">
+                        <i class="tt_vector-notifications-warning">warning</i>
+                    </div>
+                    <h2>warning, </h2>
+                </li>
+            </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Thu, 24 Nov 2022 12:28:43 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>

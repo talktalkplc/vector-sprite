@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG CSS sprite preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+
+            i {
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+                display: inline-block;
+                background-size: 617px 595px !important;
+            }
+        </style>
+
+<!--
+Sprite CSS
+====================================================================================================
+This is an all-in-one inline version of the CSS necessary to use the SVG sprite.
+-->
+
+<style>
+.tt_vector-welcome-centre-app-billing {
+    background: url("sprite-a78e506c.svg") 0 0 no-repeat;
+    width: 240px;
+    height: 240px;
+}
+.tt_vector-welcome-centre-app-chat {
+    background: url("sprite-a78e506c.svg") 63.6604774535809% 0 no-repeat;
+    width: 240px;
+    height: 240px;
+}
+.tt_vector-welcome-centre-app-payment {
+    background: url("sprite-a78e506c.svg") 0 67.6056338028169% no-repeat;
+    width: 240px;
+    height: 240px;
+}
+.tt_vector-welcome-centre-app-usage {
+    background: url("sprite-a78e506c.svg") 63.6604774535809% 67.6056338028169% no-repeat;
+    width: 240px;
+    height: 240px;
+}
+.tt_vector-welcome-centre-bills {
+    background: url("sprite-a78e506c.svg") 96.96969696969697% 56.25% no-repeat;
+    width: 122px;
+    height: 115px;
+}
+.tt_vector-welcome-centre-fast_small {
+    background: url("sprite-a78e506c.svg") 84.65608465608466% 70.64220183486239% no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.tt_vector-welcome-centre-faster {
+    background: url("sprite-a78e506c.svg") 100% 0 no-repeat;
+    width: 137px;
+    height: 90px;
+}
+.tt_vector-welcome-centre-faster_small {
+    background: url("sprite-a78e506c.svg") 93.47442680776014% 70.64220183486239% no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.tt_vector-welcome-centre-fibre {
+    background: url("sprite-a78e506c.svg") 100% 17.821782178217823% no-repeat;
+    width: 137px;
+    height: 90px;
+}
+.tt_vector-welcome-centre-help_small {
+    background: url("sprite-a78e506c.svg") 98.80749574105621% 68.14159292035399% no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.tt_vector-welcome-centre-mobile {
+    background: url("sprite-a78e506c.svg") 0 100% no-repeat;
+    width: 122px;
+    height: 115px;
+}
+.tt_vector-welcome-centre-mobile_small {
+    background: url("sprite-a78e506c.svg") 43.03350970017637% 88.07339449541284% no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.tt_vector-welcome-centre-payment_small {
+    background: url("sprite-a78e506c.svg") 81.77172061328791% 76.99115044247787% no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.tt_vector-welcome-centre-payments {
+    background: url("sprite-a78e506c.svg") 24.646464646464647% 100% no-repeat;
+    width: 122px;
+    height: 115px;
+}
+.tt_vector-welcome-centre-search_small {
+    background: url("sprite-a78e506c.svg") 86.88245315161839% 76.99115044247787% no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.tt_vector-welcome-centre-ufo {
+    background: url("sprite-a78e506c.svg") 100% 35.64356435643565% no-repeat;
+    width: 137px;
+    height: 90px;
+}
+.tt_vector-welcome-centre-ufo_small {
+    background: url("sprite-a78e506c.svg") 51.851851851851855% 88.07339449541284% no-repeat;
+    width: 50px;
+    height: 50px;
+}
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </head>
+    <body>
+        <header>
+            <h1>SVG CSS sprite preview</h1>
+            <p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+        </header>
+        <section>
+
+<!--
+Conventional CSS sprite
+====================================================================================================
+This technique uses CSS classes to display portions of the sprite as background image of
+appropriately sized elements.
+-->
+
+            <ul>
+             <li title="app-billing">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-app-billing">app-billing</i>
+                    </div>
+                    <h2>app-billing, </h2>
+                </li>
+             <li title="app-chat">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-app-chat">app-chat</i>
+                    </div>
+                    <h2>app-chat, </h2>
+                </li>
+             <li title="app-payment">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-app-payment">app-payment</i>
+                    </div>
+                    <h2>app-payment, </h2>
+                </li>
+             <li title="app-usage">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-app-usage">app-usage</i>
+                    </div>
+                    <h2>app-usage, </h2>
+                </li>
+             <li title="bills">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-bills">bills</i>
+                    </div>
+                    <h2>bills, </h2>
+                </li>
+             <li title="fast_small">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-fast_small">fast_small</i>
+                    </div>
+                    <h2>fast_small, </h2>
+                </li>
+             <li title="faster">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-faster">faster</i>
+                    </div>
+                    <h2>faster, </h2>
+                </li>
+             <li title="faster_small">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-faster_small">faster_small</i>
+                    </div>
+                    <h2>faster_small, </h2>
+                </li>
+             <li title="fibre">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-fibre">fibre</i>
+                    </div>
+                    <h2>fibre, </h2>
+                </li>
+             <li title="help_small">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-help_small">help_small</i>
+                    </div>
+                    <h2>help_small, </h2>
+                </li>
+             <li title="mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-mobile">mobile</i>
+                    </div>
+                    <h2>mobile, </h2>
+                </li>
+             <li title="mobile_small">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-mobile_small">mobile_small</i>
+                    </div>
+                    <h2>mobile_small, </h2>
+                </li>
+             <li title="payment_small">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-payment_small">payment_small</i>
+                    </div>
+                    <h2>payment_small, </h2>
+                </li>
+             <li title="payments">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-payments">payments</i>
+                    </div>
+                    <h2>payments, </h2>
+                </li>
+             <li title="search_small">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-search_small">search_small</i>
+                    </div>
+                    <h2>search_small, </h2>
+                </li>
+             <li title="ufo">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-ufo">ufo</i>
+                    </div>
+                    <h2>ufo, </h2>
+                </li>
+             <li title="ufo_small">
+                    <div class="icon-box">
+                        <i class="tt_vector-welcome-centre-ufo_small">ufo_small</i>
+                    </div>
+                    <h2>ufo_small, </h2>
+                </li>
+            </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Thu, 24 Nov 2022 12:28:41 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>

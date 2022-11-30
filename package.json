@@ -1,6 +1,6 @@
 {
     "name": "talktalkplc-vector-sprite",
-    "version": "1.0.44",
+    "version": "${bamboo.deploy.version}",
     "description": "",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
