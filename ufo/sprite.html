@@ -1,120 +1,215 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta charset="utf-8"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-		<title>SVG CSS sprite preview | svg-sprite</title>
-		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
-		<style>i{text-indent:200%;white-space:nowrap;overflow:hidden;display:inline-block;background-size:413px 308px!important}</style>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG CSS sprite preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+
+            i {
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+                display: inline-block;
+                background-size: 405px 308px !important;
+            }
+        </style>
 
 <!--
-
 Sprite CSS
 ====================================================================================================
 This is an all-in-one inline version of the CSS necessary to use the SVG sprite.
-
 -->
 
-<style type="text/css">
+<style>
 .tt_vector-ufo-circle-fill-calling-features-desktop {
-	background: url("sprite-d28fd720.svg") 47.12990936555891% 81.41592920353982% no-repeat;
-	width: 82px;
-	height: 82px;
+    background: url("sprite-f10fa8c0.svg") 25.69659442724458% 40.70796460176991% no-repeat;
+    width: 82px;
+    height: 82px;
 }
 .tt_vector-ufo-circle-fill-calling-features-mobile {
-	background: url("sprite-d28fd720.svg") 89.21832884097034% 77.44360902255639% no-repeat;
-	width: 42px;
-	height: 42px;
+    background: url("sprite-f10fa8c0.svg") 91.18457300275482% 61.65413533834587% no-repeat;
+    width: 42px;
+    height: 42px;
 }
 .tt_vector-ufo-circle-fill-online-security-desktop {
-	background: url("sprite-d28fd720.svg") 75.22658610271904% 36.283185840707965% no-repeat;
-	width: 82px;
-	height: 82px;
+    background: url("sprite-f10fa8c0.svg") 51.083591331269346% 40.70796460176991% no-repeat;
+    width: 82px;
+    height: 82px;
 }
 .tt_vector-ufo-circle-fill-online-security-mobile {
-	background: url("sprite-d28fd720.svg") 33.9622641509434% 100% no-repeat;
-	width: 42px;
-	height: 42px;
+    background: url("sprite-f10fa8c0.svg") 91.18457300275482% 77.44360902255639% no-repeat;
+    width: 42px;
+    height: 42px;
 }
 .tt_vector-ufo-circle-fill-tick-desktop {
-	background: url("sprite-d28fd720.svg") 100% 0 no-repeat;
-	width: 82px;
-	height: 82px;
+    background: url("sprite-f10fa8c0.svg") 77.08978328173374% 0 no-repeat;
+    width: 82px;
+    height: 82px;
 }
 .tt_vector-ufo-circle-fill-tick-mobile {
-	background: url("sprite-d28fd720.svg") 22.641509433962263% 100% no-repeat;
-	width: 42px;
-	height: 42px;
+    background: url("sprite-f10fa8c0.svg") 0 100% no-repeat;
+    width: 42px;
+    height: 42px;
 }
 .tt_vector-ufo-circle-fill-tv-desktop {
-	background: url("sprite-d28fd720.svg") 75.22658610271904% 0 no-repeat;
-	width: 82px;
-	height: 82px;
+    background: url("sprite-f10fa8c0.svg") 77.08978328173374% 36.283185840707965% no-repeat;
+    width: 82px;
+    height: 82px;
 }
 .tt_vector-ufo-circle-fill-tv-mobile {
-	background: url("sprite-d28fd720.svg") 11.320754716981131% 100% no-repeat;
-	width: 42px;
-	height: 42px;
+    background: url("sprite-f10fa8c0.svg") 11.570247933884298% 100% no-repeat;
+    width: 42px;
+    height: 42px;
 }
 .tt_vector-ufo-circle-fill-unlimited-desktop {
-	background: url("sprite-d28fd720.svg") 0 81.41592920353982% no-repeat;
-	width: 82px;
-	height: 82px;
+    background: url("sprite-f10fa8c0.svg") 0 81.41592920353982% no-repeat;
+    width: 82px;
+    height: 82px;
 }
 .tt_vector-ufo-circle-fill-unlimited-mobile {
-	background: url("sprite-d28fd720.svg") 0 100% no-repeat;
-	width: 42px;
-	height: 42px;
+    background: url("sprite-f10fa8c0.svg") 23.140495867768596% 100% no-repeat;
+    width: 42px;
+    height: 42px;
 }
 .tt_vector-ufo-circle-fill-wifi-desktop {
-	background: url("sprite-d28fd720.svg") 25.075528700906343% 40.70796460176991% no-repeat;
-	width: 82px;
-	height: 82px;
+    background: url("sprite-f10fa8c0.svg") 25.386996904024766% 81.41592920353982% no-repeat;
+    width: 82px;
+    height: 82px;
 }
 .tt_vector-ufo-circle-fill-wifi-mobile {
-	background: url("sprite-d28fd720.svg") 89.21832884097034% 61.65413533834587% no-repeat;
-	width: 42px;
-	height: 42px;
+    background: url("sprite-f10fa8c0.svg") 34.710743801652896% 100% no-repeat;
+    width: 42px;
+    height: 42px;
 }
 .tt_vector-ufo-hexagon-futureproof-desktop {
-	background: url("sprite-d28fd720.svg") 0 42.592592592592595% no-repeat;
-	width: 83px;
-	height: 92px;
+    background: url("sprite-f10fa8c0.svg") 0 0 no-repeat;
+    width: 83px;
+    height: 92px;
 }
 .tt_vector-ufo-hexagon-futureproof-mobile {
-	background: url("sprite-d28fd720.svg") 70.20648967551622% 81.41592920353982% no-repeat;
-	width: 74px;
-	height: 82px;
+    background: url("sprite-f10fa8c0.svg") 49.546827794561935% 81.41592920353982% no-repeat;
+    width: 74px;
+    height: 82px;
 }
 .tt_vector-ufo-hexagon-install-desktop {
-	background: url("sprite-d28fd720.svg") 50.303030303030305% 0 no-repeat;
-	width: 83px;
-	height: 92px;
+    background: url("sprite-f10fa8c0.svg") 25.77639751552795% 0 no-repeat;
+    width: 83px;
+    height: 92px;
 }
 .tt_vector-ufo-hexagon-install-mobile {
-	background: url("sprite-d28fd720.svg") 24.188790560471976% 81.41592920353982% no-repeat;
-	width: 74px;
-	height: 82px;
+    background: url("sprite-f10fa8c0.svg") 71.90332326283988% 81.41592920353982% no-repeat;
+    width: 74px;
+    height: 82px;
 }
 .tt_vector-ufo-hexagon-reliable-desktop {
-	background: url("sprite-d28fd720.svg") 25.151515151515152% 0 no-repeat;
-	width: 83px;
-	height: 92px;
+    background: url("sprite-f10fa8c0.svg") 51.5527950310559% 0 no-repeat;
+    width: 83px;
+    height: 92px;
 }
 .tt_vector-ufo-hexagon-reliable-mobile {
-	background: url("sprite-d28fd720.svg") 48.67256637168141% 40.70796460176991% no-repeat;
-	width: 74px;
-	height: 82px;
+    background: url("sprite-f10fa8c0.svg") 100% 0 no-repeat;
+    width: 74px;
+    height: 82px;
 }
 .tt_vector-ufo-hexagon-ultrafast-desktop {
-	background: url("sprite-d28fd720.svg") 0 0 no-repeat;
-	width: 83px;
-	height: 92px;
+    background: url("sprite-f10fa8c0.svg") 0 42.592592592592595% no-repeat;
+    width: 83px;
+    height: 92px;
 }
 .tt_vector-ufo-hexagon-ultrafast-mobile {
-	background: url("sprite-d28fd720.svg") 97.6401179941003% 36.283185840707965% no-repeat;
-	width: 74px;
-	height: 82px;
+    background: url("sprite-f10fa8c0.svg") 100% 36.283185840707965% no-repeat;
+    width: 74px;
+    height: 82px;
 }
 </style>
 
@@ -122,213 +217,151 @@ This is an all-in-one inline version of the CSS necessary to use the SVG sprite.
 ====================================================================================================
 -->
 
-	</head>
-	<body>
-		<header>
-			<h1>SVG CSS sprite preview</h1>
-			<p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
-		</header>
-		<section>
+    </head>
+    <body>
+        <header>
+            <h1>SVG CSS sprite preview</h1>
+            <p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+        </header>
+        <section>
 
 <!--
-
 Conventional CSS sprite
 ====================================================================================================
 This technique uses CSS classes to display portions of the sprite as background image of
 appropriately sized elements.
-
 -->
 
-			<ul>
-				<li title="circle-fill-calling-features-desktop">
-					<div class="icon-box">
-
-						<!-- circle-fill-calling-features-desktop -->
-						<i class="tt_vector-ufo-circle-fill-calling-features-desktop">circle-fill-calling-features-desktop</i>
-
-					</div>
-					<h2>circle-fill-calling-features-desktop</h2>
-				</li>
-				<li title="circle-fill-calling-features-mobile">
-					<div class="icon-box">
-
-						<!-- circle-fill-calling-features-mobile -->
-						<i class="tt_vector-ufo-circle-fill-calling-features-mobile">circle-fill-calling-features-mobile</i>
-
-					</div>
-					<h2>circle-fill-calling-features-mobile</h2>
-				</li>
-				<li title="circle-fill-online-security-desktop">
-					<div class="icon-box">
-
-						<!-- circle-fill-online-security-desktop -->
-						<i class="tt_vector-ufo-circle-fill-online-security-desktop">circle-fill-online-security-desktop</i>
-
-					</div>
-					<h2>circle-fill-online-security-desktop</h2>
-				</li>
-				<li title="circle-fill-online-security-mobile">
-					<div class="icon-box">
-
-						<!-- circle-fill-online-security-mobile -->
-						<i class="tt_vector-ufo-circle-fill-online-security-mobile">circle-fill-online-security-mobile</i>
-
-					</div>
-					<h2>circle-fill-online-security-mobile</h2>
-				</li>
-				<li title="circle-fill-tick-desktop">
-					<div class="icon-box">
-
-						<!-- circle-fill-tick-desktop -->
-						<i class="tt_vector-ufo-circle-fill-tick-desktop">circle-fill-tick-desktop</i>
-
-					</div>
-					<h2>circle-fill-tick-desktop</h2>
-				</li>
-				<li title="circle-fill-tick-mobile">
-					<div class="icon-box">
-
-						<!-- circle-fill-tick-mobile -->
-						<i class="tt_vector-ufo-circle-fill-tick-mobile">circle-fill-tick-mobile</i>
-
-					</div>
-					<h2>circle-fill-tick-mobile</h2>
-				</li>
-				<li title="circle-fill-tv-desktop">
-					<div class="icon-box">
-
-						<!-- circle-fill-tv-desktop -->
-						<i class="tt_vector-ufo-circle-fill-tv-desktop">circle-fill-tv-desktop</i>
-
-					</div>
-					<h2>circle-fill-tv-desktop</h2>
-				</li>
-				<li title="circle-fill-tv-mobile">
-					<div class="icon-box">
-
-						<!-- circle-fill-tv-mobile -->
-						<i class="tt_vector-ufo-circle-fill-tv-mobile">circle-fill-tv-mobile</i>
-
-					</div>
-					<h2>circle-fill-tv-mobile</h2>
-				</li>
-				<li title="circle-fill-unlimited-desktop">
-					<div class="icon-box">
-
-						<!-- circle-fill-unlimited-desktop -->
-						<i class="tt_vector-ufo-circle-fill-unlimited-desktop">circle-fill-unlimited-desktop</i>
-
-					</div>
-					<h2>circle-fill-unlimited-desktop</h2>
-				</li>
-				<li title="circle-fill-unlimited-mobile">
-					<div class="icon-box">
-
-						<!-- circle-fill-unlimited-mobile -->
-						<i class="tt_vector-ufo-circle-fill-unlimited-mobile">circle-fill-unlimited-mobile</i>
-
-					</div>
-					<h2>circle-fill-unlimited-mobile</h2>
-				</li>
-				<li title="circle-fill-wifi-desktop">
-					<div class="icon-box">
-
-						<!-- circle-fill-wifi-desktop -->
-						<i class="tt_vector-ufo-circle-fill-wifi-desktop">circle-fill-wifi-desktop</i>
-
-					</div>
-					<h2>circle-fill-wifi-desktop</h2>
-				</li>
-				<li title="circle-fill-wifi-mobile">
-					<div class="icon-box">
-
-						<!-- circle-fill-wifi-mobile -->
-						<i class="tt_vector-ufo-circle-fill-wifi-mobile">circle-fill-wifi-mobile</i>
-
-					</div>
-					<h2>circle-fill-wifi-mobile</h2>
-				</li>
-				<li title="hexagon-futureproof-desktop">
-					<div class="icon-box">
-
-						<!-- hexagon-futureproof-desktop -->
-						<i class="tt_vector-ufo-hexagon-futureproof-desktop">hexagon-futureproof-desktop</i>
-
-					</div>
-					<h2>hexagon-futureproof-desktop</h2>
-				</li>
-				<li title="hexagon-futureproof-mobile">
-					<div class="icon-box">
-
-						<!-- hexagon-futureproof-mobile -->
-						<i class="tt_vector-ufo-hexagon-futureproof-mobile">hexagon-futureproof-mobile</i>
-
-					</div>
-					<h2>hexagon-futureproof-mobile</h2>
-				</li>
-				<li title="hexagon-install-desktop">
-					<div class="icon-box">
-
-						<!-- hexagon-install-desktop -->
-						<i class="tt_vector-ufo-hexagon-install-desktop">hexagon-install-desktop</i>
-
-					</div>
-					<h2>hexagon-install-desktop</h2>
-				</li>
-				<li title="hexagon-install-mobile">
-					<div class="icon-box">
-
-						<!-- hexagon-install-mobile -->
-						<i class="tt_vector-ufo-hexagon-install-mobile">hexagon-install-mobile</i>
-
-					</div>
-					<h2>hexagon-install-mobile</h2>
-				</li>
-				<li title="hexagon-reliable-desktop">
-					<div class="icon-box">
-
-						<!-- hexagon-reliable-desktop -->
-						<i class="tt_vector-ufo-hexagon-reliable-desktop">hexagon-reliable-desktop</i>
-
-					</div>
-					<h2>hexagon-reliable-desktop</h2>
-				</li>
-				<li title="hexagon-reliable-mobile">
-					<div class="icon-box">
-
-						<!-- hexagon-reliable-mobile -->
-						<i class="tt_vector-ufo-hexagon-reliable-mobile">hexagon-reliable-mobile</i>
-
-					</div>
-					<h2>hexagon-reliable-mobile</h2>
-				</li>
-				<li title="hexagon-ultrafast-desktop">
-					<div class="icon-box">
-
-						<!-- hexagon-ultrafast-desktop -->
-						<i class="tt_vector-ufo-hexagon-ultrafast-desktop">hexagon-ultrafast-desktop</i>
-
-					</div>
-					<h2>hexagon-ultrafast-desktop</h2>
-				</li>
-				<li title="hexagon-ultrafast-mobile">
-					<div class="icon-box">
-
-						<!-- hexagon-ultrafast-mobile -->
-						<i class="tt_vector-ufo-hexagon-ultrafast-mobile">hexagon-ultrafast-mobile</i>
-
-					</div>
-					<h2>hexagon-ultrafast-mobile</h2>
-				</li>
-			</ul>
+            <ul>
+             <li title="circle-fill-calling-features-desktop">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-calling-features-desktop">circle-fill-calling-features-desktop</i>
+                    </div>
+                    <h2>circle-fill-calling-features-desktop, </h2>
+                </li>
+             <li title="circle-fill-calling-features-mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-calling-features-mobile">circle-fill-calling-features-mobile</i>
+                    </div>
+                    <h2>circle-fill-calling-features-mobile, </h2>
+                </li>
+             <li title="circle-fill-online-security-desktop">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-online-security-desktop">circle-fill-online-security-desktop</i>
+                    </div>
+                    <h2>circle-fill-online-security-desktop, </h2>
+                </li>
+             <li title="circle-fill-online-security-mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-online-security-mobile">circle-fill-online-security-mobile</i>
+                    </div>
+                    <h2>circle-fill-online-security-mobile, </h2>
+                </li>
+             <li title="circle-fill-tick-desktop">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-tick-desktop">circle-fill-tick-desktop</i>
+                    </div>
+                    <h2>circle-fill-tick-desktop, </h2>
+                </li>
+             <li title="circle-fill-tick-mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-tick-mobile">circle-fill-tick-mobile</i>
+                    </div>
+                    <h2>circle-fill-tick-mobile, </h2>
+                </li>
+             <li title="circle-fill-tv-desktop">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-tv-desktop">circle-fill-tv-desktop</i>
+                    </div>
+                    <h2>circle-fill-tv-desktop, </h2>
+                </li>
+             <li title="circle-fill-tv-mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-tv-mobile">circle-fill-tv-mobile</i>
+                    </div>
+                    <h2>circle-fill-tv-mobile, </h2>
+                </li>
+             <li title="circle-fill-unlimited-desktop">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-unlimited-desktop">circle-fill-unlimited-desktop</i>
+                    </div>
+                    <h2>circle-fill-unlimited-desktop, </h2>
+                </li>
+             <li title="circle-fill-unlimited-mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-unlimited-mobile">circle-fill-unlimited-mobile</i>
+                    </div>
+                    <h2>circle-fill-unlimited-mobile, </h2>
+                </li>
+             <li title="circle-fill-wifi-desktop">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-wifi-desktop">circle-fill-wifi-desktop</i>
+                    </div>
+                    <h2>circle-fill-wifi-desktop, </h2>
+                </li>
+             <li title="circle-fill-wifi-mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-circle-fill-wifi-mobile">circle-fill-wifi-mobile</i>
+                    </div>
+                    <h2>circle-fill-wifi-mobile, </h2>
+                </li>
+             <li title="hexagon-futureproof-desktop">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-hexagon-futureproof-desktop">hexagon-futureproof-desktop</i>
+                    </div>
+                    <h2>hexagon-futureproof-desktop, </h2>
+                </li>
+             <li title="hexagon-futureproof-mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-hexagon-futureproof-mobile">hexagon-futureproof-mobile</i>
+                    </div>
+                    <h2>hexagon-futureproof-mobile, </h2>
+                </li>
+             <li title="hexagon-install-desktop">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-hexagon-install-desktop">hexagon-install-desktop</i>
+                    </div>
+                    <h2>hexagon-install-desktop, </h2>
+                </li>
+             <li title="hexagon-install-mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-hexagon-install-mobile">hexagon-install-mobile</i>
+                    </div>
+                    <h2>hexagon-install-mobile, </h2>
+                </li>
+             <li title="hexagon-reliable-desktop">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-hexagon-reliable-desktop">hexagon-reliable-desktop</i>
+                    </div>
+                    <h2>hexagon-reliable-desktop, </h2>
+                </li>
+             <li title="hexagon-reliable-mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-hexagon-reliable-mobile">hexagon-reliable-mobile</i>
+                    </div>
+                    <h2>hexagon-reliable-mobile, </h2>
+                </li>
+             <li title="hexagon-ultrafast-desktop">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-hexagon-ultrafast-desktop">hexagon-ultrafast-desktop</i>
+                    </div>
+                    <h2>hexagon-ultrafast-desktop, </h2>
+                </li>
+             <li title="hexagon-ultrafast-mobile">
+                    <div class="icon-box">
+                        <i class="tt_vector-ufo-hexagon-ultrafast-mobile">hexagon-ultrafast-mobile</i>
+                    </div>
+                    <h2>hexagon-ultrafast-mobile, </h2>
+                </li>
+            </ul>
 
 <!--
 ====================================================================================================
 -->
 
-		</section>
-		<footer>
-			<p>Generated at Mon, 23 Oct 2017 16:24:35 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
-		</footer>
-	</body>
+        </section>
+        <footer>
+            <p>Generated at Wed, 30 Nov 2022 13:49:01 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
 </html>
